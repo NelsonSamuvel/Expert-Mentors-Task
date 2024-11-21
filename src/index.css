@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .mx-container {
+    @apply max-w-screen-xl mx-auto;
+  }
+
+  .padding-y {
+    @apply py-2 md:py-4;
+  }
+}
