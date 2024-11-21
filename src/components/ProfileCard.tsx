@@ -114,6 +114,7 @@ const ProfileCard = ({
               {expert.slots.map((slot, idx) => (
                 <li key={idx}>
                   <button
+                    disabled={!slot.available}
                     onClick={() =>
                       handleSlots({ expertId: expert.id, time: slot.time })
                     }
