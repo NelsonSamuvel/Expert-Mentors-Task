@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getExperts } from "../services/apiExperts";
+// import { getExperts } from "../services/apiExperts";
 import ProfileCard, { BookedSlotType } from "./ProfileCard";
 import { ExpertType } from "../types/experts";
 
@@ -138,7 +138,7 @@ const profiles = [
 ];
 
 const ProfileList = () => {
-  const [experts, setExperts] = useState<ExpertType[]>(profiles);
+  const [experts] = useState<ExpertType[]>(profiles);
   // const [isLoading, setIsLoading] = useState(false);
   // const [err, setErr] = useState<null | string>(null);
 
